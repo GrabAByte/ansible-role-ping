@@ -7,7 +7,6 @@ Pings Linux and Windows OS Hosts.
 None.
 
 ## Role Variables
-
 ## Dependencies
 
 None.
