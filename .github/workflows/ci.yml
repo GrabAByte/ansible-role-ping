@@ -7,7 +7,9 @@ name: CI
       - main
 
 jobs:
+  gather-metadata:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@feat/shareVars
   yaml-lint:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@feat/inputs
+    uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@main
     with:
       yamlPath: '.'
