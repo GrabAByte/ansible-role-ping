@@ -19,6 +19,7 @@ jobs:
     with:
       artifact: main.yml
       path: meta
+    needs: gather-metadata
   yaml-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@main
     with:
