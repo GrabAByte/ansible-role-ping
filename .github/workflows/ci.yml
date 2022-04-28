@@ -12,6 +12,10 @@ jobs:
     with:
       artifact: metadata.sh
       path: artifacts
+  read-metadata:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/downloadArtifact.yml@feat/shareVars
+    with:
+      artifact: metadata.sh
   yaml-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@main
     with:
