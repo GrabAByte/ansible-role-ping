@@ -9,6 +9,9 @@ name: CI
 jobs:
   gather-metadata:
     uses: GrabAByte/github-devops-workflows/.github/workflows/uploadMetadata.yml@feat/shareVars
+    with:
+      artifact: metadata.sh
+      path: artifacts
   yaml-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@main
     with:
