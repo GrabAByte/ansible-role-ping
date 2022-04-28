@@ -7,20 +7,20 @@ name: CI
       - main
 
 env:
-  artifact: metadata.sh
-  path: metadata
+  artifact: main.yml
+  path: meta
 
 jobs:
   gather-metadata:
     uses: GrabAByte/github-devops-workflows/.github/workflows/uploadMetadata.yml@feat/shareVars
     with:
-      artifact: metadata.sh
-      path: metadata
+      artifact: main.yml
+      path: meta
   read-metadata:
     uses: GrabAByte/github-devops-workflows/.github/workflows/downloadArtifact.yml@feat/shareVars
     with:
-      artifact: metadata.sh
-      path: metadata
+      artifact: main.yml
+      path: meta
   yaml-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@main
     with:
