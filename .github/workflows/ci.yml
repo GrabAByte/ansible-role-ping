@@ -7,20 +7,20 @@ name: CI
       - main
 
 # workflow_call with env: based parameters is not supported so parameters may be repeated below
-
 jobs:
   gather-metadata:
     uses: GrabAByte/github-devops-workflows/.github/workflows/uploadMetadata.yml@feat/shareVars
     with:
       artifact: main.yml
       path: meta
+  yaml-lint:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@main
+    with:
+      yamlPath: '.'
+    needs: gather-metadata
   read-metadata:
     uses: GrabAByte/github-devops-workflows/.github/workflows/downloadArtifact.yml@feat/shareVars
     with:
       artifact: main.yml
       path: meta
     needs: gather-metadata
-  yaml-lint:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@main
-    with:
-      yamlPath: '.'
