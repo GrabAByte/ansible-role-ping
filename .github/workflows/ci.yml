@@ -7,5 +7,5 @@ name: CI
       - main
 
 jobs:
-  docker-workflow:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/ansibleLint.yml@feat/ansible
+  yaml-lint:
+    uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@main
