@@ -6,7 +6,6 @@ galaxy_info:
   author: grababyte
   description: Ping for Windows and Linux
   license: "license (BSD, MIT)"
-  description: 'Ansible Role to perform a simple ping'
   min_ansible_version: 2.4
   platforms:
     - name: EL
