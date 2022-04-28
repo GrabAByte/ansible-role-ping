@@ -1,0 +1,7 @@
+---
+name: 'ping'
+galaxy_info:
+  author: 'GrabAByte'
+  license: ""
+  description: 'Ansible Role to perform a simple ping'
+  version: "0.0.0"
