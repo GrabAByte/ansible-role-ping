@@ -6,16 +6,21 @@ name: CI
     branches:
       - main
 
+env:
+  artifact: metadata.sh
+  path: metadata
+
 jobs:
   gather-metadata:
     uses: GrabAByte/github-devops-workflows/.github/workflows/uploadMetadata.yml@feat/shareVars
     with:
-      artifact: metadata.sh
-      path: artifacts
+      artifact: ${{ env.artifact }}
+      path: ${{ env.path }}
   read-metadata:
     uses: GrabAByte/github-devops-workflows/.github/workflows/downloadArtifact.yml@feat/shareVars
     with:
-      artifact: metadata.sh
+      artifact: ${{ env.artifact }}
+      path: ${{ env.path }}
   yaml-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@main
     with:
