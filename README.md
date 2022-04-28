@@ -14,10 +14,12 @@ None.
 
 ## Example Playbook (using default package)
 
-    - hosts: servers
-      roles:
-        - role: grababyte.ping
-          become: yes
+```yaml
+- hosts: servers
+  roles:
+    - role: grababyte.ping
+      become: yes
+```
 
 ## License
 
