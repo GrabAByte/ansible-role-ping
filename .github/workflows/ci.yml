@@ -14,13 +14,13 @@ jobs:
   gather-metadata:
     uses: GrabAByte/github-devops-workflows/.github/workflows/uploadMetadata.yml@feat/shareVars
     with:
-      artifact: $artifact
-      path: $path
+      artifact: metadata.sh
+      path: metadata
   read-metadata:
     uses: GrabAByte/github-devops-workflows/.github/workflows/downloadArtifact.yml@feat/shareVars
     with:
-      artifact: $artifact
-      path: $path
+      artifact: metadata.sh
+      path: metadata
   yaml-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@main
     with:
