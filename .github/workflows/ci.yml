@@ -6,9 +6,7 @@ name: CI
     branches:
       - main
 
-env:
-  artifact: main.yml
-  path: meta
+# workflow_call with env: based parameters is not supported so parameters may be repeated below
 
 jobs:
   gather-metadata:
