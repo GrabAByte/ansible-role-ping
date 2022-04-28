@@ -1,7 +1,29 @@
 ---
-name: 'ping'
+dependencies: []
 galaxy_info:
-  author: 'GrabAByte'
-  license: ""
+  role_name: ping
+  version: 0.0.0
+  author: grababyte
+  description: Ping for Windows and Linux
+  license: "license (BSD, MIT)"
   description: 'Ansible Role to perform a simple ping'
-  version: "0.0.0"
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: FreeBSD
+      versions:
+        - all
+    - name: Windows
+      versions:
+        - all
