@@ -15,7 +15,7 @@ jobs:
   yaml-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@0.0.5
     with:
-      yamlPath: '.github'
+      yamlPath: .
     needs: get-version
   update-version:
     uses: GrabAByte/github-devops-workflows/.github/workflows/updateVersion.yml@0.0.5
