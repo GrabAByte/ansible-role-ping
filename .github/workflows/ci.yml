@@ -10,8 +10,8 @@ jobs:
   get-version:
     uses: GrabAByte/github-devops-workflows/.github/workflows/getVersion.yml@0.0.4
     with:
-      metadataFile: 'metadata.json'
-      metadataPath: .
+      metadataFile: 'main.yml'
+      metadataPath: 'meta'
   yaml-lint:
     uses: GrabAByte/github-devops-workflows/.github/workflows/yamlLint.yml@0.0.4
     with:
@@ -22,6 +22,6 @@ jobs:
     with:
       gitUsername: 'grababyte'
       gitEmail: 'grababyte@github.com'
-      metadataFile: 'metadata.json'
-      metadataPath: .
+      metadataFile: 'main.yml'
+      metadataPath: 'meta'
     needs: yaml-lint
