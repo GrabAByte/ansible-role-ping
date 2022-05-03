@@ -2,7 +2,7 @@
 dependencies: []
 galaxy_info:
   role_name: ping
-  version: 0.0.0
+  version: 0.0.1
   author: grababyte
   description: Ping for Windows and Linux
   license: "license (BSD, MIT)"
