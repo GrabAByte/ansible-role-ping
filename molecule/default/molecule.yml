@@ -7,8 +7,6 @@ platforms:
   - name: instance
     image: "grababyte/docker-${MOLECULE_OS:-centos}-base:latest"
     command: ${MOLECULE_DOCKER_COMMAND:-""}
-    # volumes:
-    #   - /sys/fs/cgroup:/sys/fs/cgroup:ro
     privileged: false
     pre_build_image: true
 provisioner:
