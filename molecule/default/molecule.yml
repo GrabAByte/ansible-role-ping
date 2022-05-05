@@ -11,8 +11,5 @@ platforms:
     pre_build_image: true
 provisioner:
   name: ansible
-  config_options:
-    defaults:
-      remote_user: 'root'
   playbooks:
     converge: ${MOLECULE_PLAYBOOK:-converge.yml}
