@@ -18,7 +18,7 @@ jobs:
       yamlPath: .
     needs: get-version
   molecule-test:
-    uses: GrabAByte/github-devops-workflows/.github/workflows/ansible-molecule.yml@feat/molecule
+    uses: GrabAByte/github-devops-workflows/.github/workflows/ansibleMolecule.yml@feat/molecule
     needs: get-version
   update-version:
     uses: GrabAByte/github-devops-workflows/.github/workflows/updateVersion.yml@0.0.5
