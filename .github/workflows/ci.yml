@@ -27,4 +27,4 @@ jobs:
       gitEmail: 'grababyte@github.com'
       metadataFile: 'main.yml'
       metadataPath: 'meta'
-    needs: [yaml-lint,molecule-test]
+    needs: [yaml-lint, molecule-test]
