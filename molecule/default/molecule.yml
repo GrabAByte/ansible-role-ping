@@ -5,7 +5,7 @@ driver:
   name: docker
 platforms:
   - name: instance
-    image: "grababyte/${MOLECULE_OS:-centos}-base:latest"
+    image: "${MOLECULE_IMAGE}"
     command: ${MOLECULE_DOCKER_COMMAND:-""}
     privileged: false
     pre_build_image: true
