@@ -3,7 +3,6 @@
 Pings Linux and Windows OS Hosts.
 
 ## Requirements
-
 None.
 
 ## Role Variables
