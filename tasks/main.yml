@@ -1,6 +1,6 @@
 ---
 - name: "Ping Windows Hosts"
-  ansible.builtin.win_ping:
+  win_ping:
   when: ansible_facts.system == "Win32NT"
 
 - name: "Ping Linux Hosts"
