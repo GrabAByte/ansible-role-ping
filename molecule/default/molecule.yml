@@ -13,3 +13,17 @@ provisioner:
   name: ansible
   playbooks:
     converge: ${MOLECULE_PLAYBOOK:-converge.yml}
+lint: |
+  set -e
+  ansible-lint .
+  yamllint .
+scenario:
+  name: default
+  test_sequence:
+    -  lint
+    - destroy
+    - dependency
+    - syntax
+    - create
+    - prepare
+    - destroy
