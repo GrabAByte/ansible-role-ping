@@ -16,7 +16,6 @@ provisioner:
 lint: |
   set -e
   ansible-lint .
-  yamllint .
 scenario:
   name: default
   test_sequence:
