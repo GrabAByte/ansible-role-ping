@@ -4,5 +4,5 @@
   when: ansible_facts.system == "Win32NT"
 
 - name: "Ping Linux Hosts"
-  ping:
-  when: ansible_facts.system == "Linux"
+  ansible.builtin.ping:
+  when: ansible_facts.system == 'Linux'
