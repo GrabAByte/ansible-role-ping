@@ -31,5 +31,5 @@ jobs:
   ansible-release:
     uses: GrabAByte/github-devops-workflows/.github/workflows/ansibleRelease.yml@feat/molecule
     needs: update-version
-    with:
+    secrets:
       GALAXY_TOKEN: ${{ secrets.GALAXY_TOKEN }}
