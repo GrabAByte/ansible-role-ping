@@ -33,9 +33,9 @@ jobs:
       gitEmail: 'grababyte@github.com'
       metadataFile: 'main.yml'
       metadataPath: 'meta'
-    needs: [yaml-lint, molecule-test]
+    needs: [yaml-lint, molecule-test, sonar-scan]
   ansible-release:
     uses: GrabAByte/github-devops-workflows/.github/workflows/ansibleRelease.yml@feat/molecule
-    needs: update-version
     secrets:
       GALAXY_TOKEN: ${{ secrets.GALAXY_TOKEN }}
+    needs: update-version
