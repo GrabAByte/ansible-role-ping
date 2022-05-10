@@ -20,7 +20,7 @@ lint: |
 scenario:
   name: default
   test_sequence:
-    -  lint
+    - lint
     - destroy
     - dependency
     - syntax
